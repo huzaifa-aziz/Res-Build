@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Creator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <section class="resume-builder">
+        <div class="container">
+            <h1>Create Your Resume</h1>
+            <p class="tip">Fill out the fields below to create a professional resume effortlessly.</p>
+            <div class="resume_container">
+                <form class="inputField">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Enter your full name" 
+                            title="Your full name" 
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Position</label>
+                        <input 
+                            type="text" 
+                            name="title" 
+                            id="title" 
+                            placeholder="Your desired job title" 
+                            title="Enter your job position" 
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="work_experience">Work Experience</label>
+                        <textarea 
+                            name="work_experience" 
+                            id="work_experience" 
+                            placeholder="Briefly describe your experience" 
+                            cols="40" 
+                            rows="4" 
+                            title="Work experience"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="academic_details">Education</label>
+                        <textarea 
+                            name="academic_details" 
+                            id="academic_details" 
+                            placeholder="Your education background" 
+                            cols="40" 
+                            rows="3" 
+                            title="Enter your education details"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <textarea 
+                            name="skills" 
+                            id="skills" 
+                            placeholder="List your key skills (e.g., JavaScript, teamwork)" 
+                            cols="40" 
+                            rows="3" 
+                            title="Your skills"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projects">Projects</label>
+                        <textarea 
+                            name="projects" 
+                            id="projects" 
+                            placeholder="Highlight any relevant projects" 
+                            cols="40" 
+                            rows="3" 
+                            title="Your projects"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <textarea 
+                            name="contact" 
+                            id="contact" 
+                            placeholder="Your contact information (email, phone)" 
+                            cols="40" 
+                            rows="3" 
+                            title="Enter contact information"
+                        ></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    <div class="output_container"></div>
+
+    
+    <button onclick="hide()" class="generate-btn">
+        Generate / Edit
+    </button>
+
+  
+    <script src="app.js"></script>
+</body>
+
+</html>
